@@ -1,0 +1,6 @@
+node_modules/
+*.json
+!cities.json
+!movies.json
+**/.DS_Store
+tickets/.gitignore

@@ -1,0 +1,52 @@
+{
+    "movies": [
+        {
+            "title": "Avengers Infinity War",
+            "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/avengers-infinity-war.jpg"
+        },
+        {
+            "title": "Back To The Future",
+            "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/back-to-the-future.jpg"
+        },
+        {
+            "title": "Eternals",
+            "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/eternals.jpg"
+        },
+        {
+            "title": "Oceans Eleven",
+            "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/oceans-eleven.jpg"
+        },
+        {
+            "title": "Rocky",
+            "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/rocky.jpg"
+        },
+        {
+            "title": "Robocop",
+            "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/robocop.jpg"
+        },
+        {
+            "title": "The Batman",
+            "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/the-batman.jpg"
+        },
+        {
+            "title": "The Flash",
+            "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/the-flash.jpg"
+        },
+        {
+            "title": "Toy Story 3",
+            "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/toy-story-3.jpg"
+        },
+        {
+            "title": "The Exorcist",
+            "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/the-exorcist.jpg"
+        },
+        {
+            "title": "The Godfather",
+            "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/the-godfather.jpg"
+        },
+        {
+            "title": "The Devil Wears Prada",
+            "img": "https://raw.githubusercontent.com/mrspecht/media/main/img/the-devil-wears-prada.jpg"
+        }
+    ]
+}

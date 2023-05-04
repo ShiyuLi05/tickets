@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Shiyu Li">
+        <meta name="description" content="Tickets">
+        <meta name="keywords" content="HTML, CSS, SEO, web, web development">
+        <title>Tickets</title>
+
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;800&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--CSS, Favicon, Script-->
+        <link rel="stylesheet" href="./assets/style/index.css" media="all">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shiyuli05/cdn/reset.css" media="all">
+        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Shiyuli05/cdn/icon.png" type="image/x-icon">
+        <script src="./assets/script/index.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container flexbox">
+                <div class="title"><i class="fa-solid fa-ticket"></i> TICKETS</div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Theatres</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">My account</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <form>
+                    <div class="search">
+                        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <input type="search" placeholder="Search movies..." class="searchM">
+                        <div class="resultM result"></div>
+                    </div>
+                    <div class="search2">
+                        <div><i class="fa-solid fa-location-dot"></i></div>
+                        <input type="search" placeholder="Search cities..." class="searchC">
+                        <div class="resultC result"></div>
+                    </div>
+                    <button>Search</button>
+                </form>
+
+                <section>
+                    <p>Now playing</p>
+                    <div class="movies"></div>
+                </section>
+            </div>
+
+        </main>
+
+    </body>
+    
+</html>

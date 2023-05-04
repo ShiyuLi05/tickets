@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+body {
+    background-color: #191c23;
+    color: #fff;
+    font-size: 1.6rem;
+}
+.container {
+    width: min(100% - 30px, 1200px);
+    margin-inline: auto;
+    height: 100%;
+}
+
+/* -------------------------------- */
+/* Header                           */
+/* -------------------------------- */
+
+header {
+    height: 65px;
+    line-height: 65px;
+    background-color: #262930;
+    position: relative;
+    font-weight: bold;
+    width: 100%;
+    overflow: hidden;
+    border: none;
+    padding: 8px 0px;
+    margin-bottom: 30px;
+}
+header a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #f0f2f4;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.title {
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    cursor: default;
+    width: 30%;
+    line-height: 49px;
+}
+.fa-ticket {
+    color: #ee8232;
+    font-size: 2.5rem;
+    margin-right: 3px;
+}
+nav {
+    text-align: end;
+    height: 100%;
+    line-height: 49px;
+    margin: auto;
+    margin-right: 0;
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    list-style: none;
+}
+.flexbox {
+    display: flex;
+}
+nav ul li {
+    display: inline;
+    line-height: 100%;
+    cursor: default;
+}
+nav ul li + li {
+    margin-left: 30px;
+}
+
+/* -------------------------------- */
+/* Search                           */
+/* -------------------------------- */
+
+form {
+    display: flex;
+    margin-bottom: 60px;
+    position: relative;
+}
+form div {
+    display: flex;
+}
+input {
+    background-color: #262930;
+    height: 40px;
+    color: #fff;
+    font-size: 1.6rem;
+}
+form div i {
+    height: 40px;
+    width: 40px;
+    background-color: #262930;
+    margin: auto;
+    border-radius: 0.6rem 0 0 0.6rem;
+    font-size: 1.6rem;
+}
+form div i::before {
+    color: #9b9c9f;
+    margin: auto;
+    display: flex;
+    line-height: 40px;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+.search {
+    width: 60%;
+    margin-right: 10px;
+}
+.search input {
+    width: 100%;
+}
+.search2 {
+    width: 30%;
+    margin-right: 10px;
+}
+.search2 input {
+    width: 100%;
+}
+form button {
+    width: 8%;
+    border: none;
+    border-radius: 0.6rem;
+    background-color: #ee8232;
+    color: #fff;
+    font-size: 1.75rem;
+}
+input {
+    border: none;
+    border-radius: 0 0.6rem 0.6rem 0;
+}
+/* -------------------------------- */
+/* Movies                           */
+/* -------------------------------- */
+section p {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.movies {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+}
+.card:hover {
+    transform: translateY(-10px);
+    transition: all 0.25s ease-in-out;
+}
+.poster img {
+    border: none;
+    border-radius: 0.5rem
+}
+main {
+    margin-bottom: 40px;
+}
+/* -------------------------------- */
+/* Feedback                         */
+/* -------------------------------- */
+.result {
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    top: 130%;
+    font-size: 1.6rem;
+    width: 20%;
+    list-style: none;
+    border: none;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    z-index: 15;
+}
+.result ul {
+    width: 100%;
+}
+.result ul li {
+    list-style: none;
+    width: 100%;
+    padding: 8px 0 8px 14px;
+}
+.list:hover {
+    background-color: #ee8232;
+    color: #fff;
+}
