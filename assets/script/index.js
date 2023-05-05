@@ -10,7 +10,9 @@ function select(selector, parent = document) {
 function onEvent(event, selector, callback) {
     return selector.addEventListener(event, callback);
 }
-
+function selectAll(selector, parent = document) {
+    return [...parent.querySelectorAll(selector)];
+}
 
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -125,21 +127,11 @@ function searchMovies (array) {
 
            resultM.innerHTML = `<ul>${bar}</ul>`;
 
-           const li = selectAll('.list');
-           for (let i = 0; i < li.length; i++) {
-            li[i].addEventListener('click', () => {
-                searchM.value = li[i].innerText;
-                resultM.innerHTML = '';
-            })
-            }
+           listF(searchM, resultM);
         }
     })
     searchM.value = '';
 }
-
-function selectAll(selector, parent = document) {
-    return [...parent.querySelectorAll(selector)];
-  }
 
 
 function searchcities (array) {
@@ -164,16 +156,30 @@ function searchcities (array) {
 
            resultC.innerHTML = `<ul>${bar}</ul>`;
 
-           const li = selectAll('.list');
-           for (let i = 0; i < li.length; i++) {
-            li[i].addEventListener('click', () => {
-                searchC.value = li[i].innerText;
-                resultC.innerHTML = '';
-            })
-            } 
+           listF(searchC, resultC);
         }
     })
     searchC.value = '';
 }
+
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+/* Select choice                             */
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+function listF(search, result) {
+    const li = selectAll('.list');
+    for (let i = 0; i < li.length; i++) {
+        li[i].addEventListener('click', () => {
+            search.value = li[i].innerText;
+            result.innerHTML = '';
+        } )
+    }
+}
+
+
+
+
+
 
 
