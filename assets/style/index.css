@@ -50,6 +50,9 @@ header a {
     font-size: 2.5rem;
     margin-right: 3px;
 }
+.fa-bars {
+    display: none;
+}
 nav {
     text-align: end;
     height: 100%;
@@ -122,7 +125,7 @@ form div i::before {
     width: 100%;
 }
 form button {
-    width: 8%;
+    width: 96px;
     border: none;
     border-radius: 0.6rem;
     background-color: #ee8232;
@@ -186,4 +189,63 @@ main {
 .list:hover {
     background-color: #ee8232;
     color: #fff;
+}
+/* -------------------------------- */
+/* Responsive design                */
+/* -------------------------------- */
+@media (max-width:768px) {
+    .movies {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+@media (max-width: 595px) {
+    header nav {
+        display: none;
+    }
+    .title {
+        width: 100%;
+    }
+    .fa-bars {
+        display: block;
+        font-size: 2.4rem;
+        color: #ee8232;
+        line-height: 49px;
+        text-align: right;
+    }
+    form {
+        display: block;
+        margin-bottom: 40px;
+    }
+    .search {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .search2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    form button {
+        width: 115px;
+        height: 40px;
+    }
+    .result {
+        top: 70%;
+    }
+    .movies {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+@media (max-width:414px) {
+    .movies {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+@media (max-width:360px) {
+    .movies {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
 }

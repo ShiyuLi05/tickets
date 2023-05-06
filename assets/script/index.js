@@ -117,7 +117,7 @@ function searchMovies (array) {
                 const title = itemValue.toLowerCase();
                 
                 if (title.includes(searchString)) {
-                    bar += `<li class="list">${itemValue}</li>`;
+                    bar += `<li class="list listM">${itemValue}</li>`;
                     num ++;
                 }
            })
@@ -127,7 +127,13 @@ function searchMovies (array) {
 
            resultM.innerHTML = `<ul>${bar}</ul>`;
 
-           listF(searchM, resultM);
+           const li = selectAll('.listM');
+           for (let i = 0; i < li.length; i++) {
+            li[i].addEventListener('click', () => {
+                searchM.value = li[i].innerText;
+                resultM.innerHTML = '';
+            })
+            }
         }
     })
     searchM.value = '';
@@ -146,7 +152,7 @@ function searchcities (array) {
                 const itemValue = city.name;
                 const title = itemValue.toLowerCase();
                 if (title.includes(searchString)) {
-                    bar += `<li class="list">${itemValue}</li>`;
+                    bar += `<li class="list listC">${itemValue}</li>`;
                     num ++;
                 }
            })
@@ -156,27 +162,17 @@ function searchcities (array) {
 
            resultC.innerHTML = `<ul>${bar}</ul>`;
 
-           listF(searchC, resultC);
+           const li = selectAll('.listC');
+           for (let i = 0; i < li.length; i++) {
+            li[i].addEventListener('click', () => {
+                searchC.value = li[i].innerText;
+                resultC.innerHTML = '';
+            })
+            } 
         }
     })
     searchC.value = '';
 }
-
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-/* Select choice                             */
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-function listF(search, result) {
-    const li = selectAll('.list');
-    for (let i = 0; i < li.length; i++) {
-        li[i].addEventListener('click', () => {
-            search.value = li[i].innerText;
-            result.innerHTML = '';
-        } )
-    }
-}
-
 
 
 
