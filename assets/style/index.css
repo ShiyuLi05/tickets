@@ -198,6 +198,9 @@ main {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
+    .container {
+        width: min(100% - 30px, 700px);
+    }
 }
 @media (max-width: 595px) {
     header nav {
@@ -236,16 +239,25 @@ main {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
+    .container {
+        width: min(100% - 30px, 500px);
+    }
 }
 @media (max-width:414px) {
     .movies {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
+    .container {
+        width: min(100% - 30px, 400px);
+    }
 }
 @media (max-width:360px) {
     .movies {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(12, 1fr);
+    }
+    .container {
+        width: min(100% - 30px, 300px);
     }
 }
